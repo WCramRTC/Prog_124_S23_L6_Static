@@ -13,7 +13,13 @@
 
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Run before anything access data class");
+
+            DataClass.Birds.Add(new Bird());
+            Console.WriteLine(DataClass.Birds.Count);
+
+            DataClass.AddBird(new Bird());
+            Console.WriteLine(DataClass.Birds.Count);
 
         } // Main
 
